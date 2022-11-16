@@ -1,0 +1,445 @@
+\begin{table}
+\centering
+\begin{tabular}{ccr}
+$t\ [s]$& $I\ [mA]$		& $Q\ [C]$\\
+\hline 
+$0\pm 3$ 	& $51,25\pm0,256$	& 0\\
+$60\pm 3$ 	& $50,03\pm0,25 $	& 3,0018\\
+$120\pm 3$ 	& $50,03\pm0,25 $	& 6,0036\\
+$180\pm 3$ 	& $50\pm0,25 	$	& 9\\
+$240\pm 3$ 	& $49,99\pm0,25 $	& 11,9976\\
+$300\pm 3$ 	& $50,01\pm0,25 $	& 15,003\\
+$360\pm 3$ 	& $50\pm0,25 	$	& 18\\
+$420\pm 3$ 	& $50\pm0,25 	$	& 21\\
+$480\pm 3$ 	& $50\pm0,25 	$	& 24\\
+$540\pm 3$ 	& $49,99\pm0,25 $	& 26,9946\\
+$600\pm 3$ 	& $50,01\pm0,25 $	& 30,006\\
+$660\pm 3$ 	& $49,99\pm0,25 $	& 32,9934\\
+$720\pm 3$ 	& $50,01\pm0,25 $	& 36,0072\\
+$780\pm 3$ 	& $49,98\pm0,25 $	& 38,9844\\
+$840\pm 3$ 	& $49,99\pm0,25 $	& 41,9916\\
+$900\pm 3$ 	& $49,98\pm0,25 $	& 44,982\\
+$1200\pm 3$	& $50\pm0,25 	$	& 60\\
+$1500\pm 3$ 	& $50\pm0,25 	$	& 75\\
+$1800\pm 3$ 	& $50\pm0,25 	$	& 90\\
+$2100\pm 3$ 	& $49,98\pm0,25 $	& 104,958\\
+$2400\pm 3$ 	& $50,03\pm0,25 $	& 120,072\\
+$2700\pm 3$ 	& $50,02\pm0,25 $	& 135,054\\
+$3000\pm 3$ 	& $49,97\pm0,25 $	& 149,91\\
+$3300\pm 3$ 	& $50\pm0,25 	$	& 165\\
+$3600\pm 3$ 	& $49,99\pm0,25 $	& 179,964\\
+$3900\pm 3$ 	& $49,99\pm0,25 $	& 194,961\\
+$4200\pm 3$ 	& $50\pm0,25 	$	& 210\\
+$4500\pm 3$ 	& $50\pm0,25 	$	& 225\\
+$4800\pm 3$ 	& $49,98\pm0,25 $	& 239,904\\
+$5100\pm 3$ 	& $49,99\pm0,25 $	& 254,949\\
+$5400\pm 3$ 	& $50\pm0,25 	$	& 270\\
+\end{tabular}
+\caption{Rohdaten aus dem Versuchsteil eins}
+\label{T1}
+\end{table}
+\newpage
+\begin{figure}[H]
+\centering
+\input{abb1.tex}
+\caption{Graphische Darstellung der Rohdaten aus Tabelle \ref{T1}}
+\label{abb1}
+\end{figure}
+
+\section{Auswertung}
+\subsection{Versuchteil eins}
+Mit der Hittorf-Methode konnte die Überführungszahl einer 0,1 molaren KOH-Lösung ermittelt werden. 
+Die Überführungszahl des Kaliumions beträgt im Kathodenraum \tVeinsKat und im Anodenraum \tVeinsAn. 
+Die Überführungszahl des Hydroxidions beträgt im Kathodenraum \tVzweiKat und im Anodenraum \tVzweiAn. 
+Die Überführungszahlen stimmen innerhalb ihrer Fehlergrenzen mit den Literaturwerten\cite{Lit} über ein, mit \liteins für die Kaliumionen und \litzwei für die Hydroxidionen bei Raumtemperatur.\\
+Einige Fehler für diesen Versuch wurden geschätzt.
+$\Delta t$ wurde auf $3\ s$ und die Dichte von Wasser wurde auf $\Delta\rho=0,0001\ \frac{g}{mol}$ geschätzt, während der Strom Fehler aus der Betriebsanweisung\cite{Multimeter} des Messgerätes hervorgeht. $\Delta I = 0,5\% \wedge 3\ digits$.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+		& Kat-		& Mittel-	& An-\\
+\hline
+Leergewicht 	& 108,44 	& 117,93 	& 108,21\\
+Vollgewicht A 	& 187,23 	& 196,9 	& 187,06\\
+Vollgewicht E 	& 179,34 	& 197,78 	& 191,57\\
+Volumen A 	& 78,93 	& 79,11 	& 78,99\\
+Volumen E 	& 71,03 	& 79,99 	& 83,51\\
+Titration E1 	& 7,85 		& 8,8 		& 9,85\\
+Titration E2 	& 7,75 		& 8,95 		& 9,65\\
+$c(KOH)_1$	& 0,0785 	& 0,088 	& 0,0985\\
+$c(KOH)_2$	& 0,0775 	& 0,0895 	& 0,0965\\
+$\bar{\Delta c}(KOH)$ & 0,015 	& 0,00075 	& 0,0085\\
+\end{tabular}
+\caption{Relevante Volumina und Gewichte}
+\label{T2}
+\end{table}
+
+
+
+Anschließend wurde die Überführte Ladung $Q$ nach $Q=t\cdot I$ berechnet. Der Fehler der Ladung ($\Delta Q$) entspricht Gleichung \ref{q_aus_tI}.
+
+\begin{equation}
+Q = t \cdot I
+\label{q_aus_tI}
+\end{equation}
+Weiter Berechnet sich der Fehler der Ladung nach Gleichung \ref{dQ}.
+
+\begin{equation}
+\Delta Q=\sqrt{\left(\Delta t\cdot I\right)^2 + \left(\Delta I\cdot t\right)^2}
+\label{dQ}
+\end{equation}
+
+\begin{equation}
+ 269.9928\ C = 269.9928\ A\cdot s = 5400\ s \cdot 49.998\ mA \cdot 0.001\ \frac{A}{mA}
+\label{BSPq}
+\end{equation}
+
+\begin{equation}
+\Delta Q=\sqrt{\left(3\ s\cdot 50,00\ mA\right)^2 + \left(0,00025\ mA\cdot 5400\ s\right)^2}= 1,36\ C
+\label{BSPdq}
+\end{equation}
+Beispielhaft ist in Gleichung \ref{BSPq} die Ladung errechnet.
+In Gleichung \ref{BSPdq} wurde Beispielhaft der Fehler für $Q$ berechnet, wie in Gleichung \ref{dQ} beschrieben.
+\\
+Als nächstes wird die Bestimmung der Anfangs Volumina betrachtet.
+Nach $\Delta m = \left| m_2 - m_1\right|$ konnte die Massendifferenz ermittelt werden.
+Dementsprechend ergibt sich der Massenfehler aus $\Delta m=\sqrt{2\cdot (\Delta m)^2}$. Daraus folgt: 
+ $$\left|179.34\ g - 108.44\ g\right|= 78.93\ g$$
+
+Aus der Masse kann nun über Gleichung \ref{V_aus_masse} das Volumen ermittelt werden. 
+Der Fehler errechnet sich nach Gleichung \ref{dV_aus_masse}. Beispielhaft ist das in den Gleichungen \ref{BSP_V} und \ref{BSP_dV} gezeigt.
+Benutzt wurde die Dichte von Wasser: $\rho=0,9982061\ \frac{g}{ml}$\cite{DichteWasser}
+
+\begin{equation}
+V= \frac{\Delta m}{\rho}
+\label{V_aus_masse}
+\end{equation}
+
+\begin{equation}
+\Delta V=\sqrt{\left(\frac{1}{\rho}\Delta m\right)^2 + \left(-\frac{m}{\rho^2}\cdot\Delta\rho\right)^2}
+\label{dV_aus_masse}
+\end{equation}
+
+\begin{equation}
+\frac{78.79\ g}{0.9982061\frac{g}{cm^3}} = 78.93\ ml
+\label{BSP_V}
+\end{equation}
+
+\begin{equation}
+\Delta V=\sqrt{\left(\frac{1}{0,9982067\frac{g}{cm^3}}\cdot 0,01\ g\right)^2 + \left(-\frac{78,87}{0,9982067^2}\cdot0,0001\frac{g}{cm^3}\right)^2}=0,0162\ ml
+\label{BSP_dV}
+\end{equation}
+
+Für die Fehlerrechnung wurde als Masse der Durchschnitt der Massendifferenzen benutzt.
+Anschließend wurden die Referenz Konzentration errechnet nach den Gleichungen \ref{cKOH} und \ref{nHCL}.
+
+\begin{equation}
+n (HCl)= V \cdot c
+\label{nHCL}
+\end{equation}
+
+\begin{equation}
+c (KOH) = \frac{n(HCl)}{V_tit}
+\label{cKOH}
+\end{equation}
+
+\begin{equation}
+\Delta n=c\cdot \Delta V
+\label{dnHCL}
+\end{equation}
+
+\begin{equation}
+\Delta c= \sqrt{\left(\frac{1}{V}\Delta n\right)^2 + \left(\frac{n}{V^2}\Delta V\right)^2}
+\label{dcKOH}
+\end{equation}
+
+Die Gleichungen \ref{dnHCL} und \ref{dcKOH} beschreiben den dazugehöhrigen Fehler.
+Beispielhaft ist das in den Gleichungen \ref{BSPcKOH} und \ref{BSPnHCL} berechnet.
+
+\begin{equation}
+9.3\ ml \cdot \frac{0.001\ l}{ml} \cdot 0.1\ \frac{mol}{l} = 0.00093\ mol
+\label{BSPnHCL}
+\end{equation}
+
+\begin{equation}
+\frac{0.00093\ mol}{0.01\ l} = 0.093\ \frac{mol}{l}
+\label{BSPcKOH}
+\end{equation}
+
+\begin{equation}
+\Delta n=0,001\frac{l}{ml}\cdot0,1\frac{mol}{l}\cdot 0,03 ml = 3\cdot 10^{-6}\ mol
+\label{BSPnHCL}
+\end{equation}
+
+\begin{equation}
+\Delta V= \sqrt{\left(\frac{1}{0,01\ l}\cdot 0,000003\ mol\right)^2 + \left(\frac{-0,0009\ mol}{0,01^2\ l}\cdot0,03\ ml\cdot 0,001\frac{l}{ml}\right)^2}=0,0004\ l
+\label{BSPcKOH}
+\end{equation}
+
+Auch hier wurde für die Berechnung des Fehlers, der Mittelwert der Stoffmenge eingesetzt: $\bar{n}=0,0009$
+Auch die Zweittitration wurde nach den letzten Gleichungen bestimmt. Wird also hier nicht wieder wiederholt.
+
+Das Entstandene Gasvolumen errechnet sich aus der Summe der Differenzen der Stoffmengen die sich aus Erst- und Zweittitration ergeben.
+Diese Stoffmenge kann nun über das Ideale Gasgesetz in ein Volumen umgerechnet werden.
+Dafür wurde die Gleichung \ref{IGG-V} verwendet. Beispielhaft ist das in Gleichung \ref{BSP_IGG} berechnet. Die Stoffmengendifferenz beläuft sich auf $0,0000625\ mol$
+\begin{equation}
+pV=nRT \Rightarrow V=\frac{nRT}{p}
+\label{IGG-V}
+\end{equation}
+
+Im Weiteren wurden die folgenden Werte Angenommen: $R=8,31446\ \frac{J}{mol\cdot K}$, $T=300K$ und $p=101325\ Pa$
+\begin{equation}
+V=\frac{0,0000625 \cdot 8.31446 \cdot 300}{101325}=1,539\ ml
+\label{BSP_IGG}
+\end{equation}
+
+\begin{equation}
+\Delta V=\frac{R\cdot T}{P}\cdot \sqrt{3\cdot(\Delta n)^2}
+\label{dIGG}
+\end{equation}
+
+\begin{equation}
+\Delta V=\frac{8,31446\frac{J}{mol\cdot K}\cdot }{101325\ Pa}\cdot \sqrt{3\cdot 0,000003^2} =0,128\ ml
+\label{BSP_dIGG}
+\end{equation}
+
+In Gleichung \ref{dIGG} ist die Fehlerrechnung zu der Gasentwicklung gezeigt. In Gleichung \ref{BSP_dIGG} ist Beispielhaft diese Rechnung durchgeführt worden.
+Entstanden ist dabei ein Gas, welches zu zwei Dritteln aus $H_2$ und zu einem Drittel aus $O_2$ besteht.
+Es sind \VOzwei $O_2$ und \VHzwei $H_2$ entstanden.
+Aus diesen Daten lässt sich nun die Überführungszahl berechnen. Dies geschieht nach Gleichung \ref{uet}.
+\begin{equation}
+t_+ =\frac{\left|C_1-C_2\right|\cdot V_E\cdot F}{Q}
+\label{uet}
+\end{equation}
+Der Fehler von $t_+$ wurde wie in den Gleichungen \ref{ddC}, \ref{dCV} und \ref{dT} berechnet.
+\begin{align}
+\Delta\Delta c&= \sqrt{\Delta\Delta c_1^2 + \Delta\Delta c_2^2} \label{ddC}\\
+\Delta(\Delta c\cdot V_E) &= \sqrt{ (\Delta\Delta c\cdot V_E )^2 + (\Delta V_E\cdot \Delta c)^2} \label{dCV}\\
+\Delta t &= \sqrt{ \left(\frac{1}{Q}\cdot\Delta(\Delta c\cdot V_E)^2\right)+\left(-\frac{\Delta c\cdot V_E}{Q^2}\cdot\Delta Q\right)^2} \label{dT}\\
+\end{align}
+
+Die Überführungszahl wurde mithilfe der Gleichung \ref{uet} in Gleichung \ref{BSP_uet} errechnet.
+\begin{equation}
+\frac{\left|0,093-0,0785\right|\frac{mol}{l}\cdot 71,027\ ml\cdot 0,001\frac{l}{ml}\cdot 9648,533212\frac{C}{mol}}{269,9928\ C} = 19,798
+\label{BSP_uet}
+\end{equation}
+Genutzt wurde die Differenz, der arithmetischen Mittel der Konzentrationswerten, die in der Titration ermittelt wurden.
+\begin{table}
+\centering
+\begin{tabular}{lccc}
+	& Anode & Mitte & Kathode\\
+\hline
+$t_+$ & 0,198 & 0,2508 & 0,2402\\
+$t_-$ & 0,802 & 0,7492 & 0,7598\\
+\end{tabular}
+\caption{Berechnete Überführungszahlen}
+\label{T3}
+\end{table}
+\begin{figure}[b]
+\centering
+\input{abb3.tex}
+\caption{Strecke $\Delta h$ gegen die Zeit [s], bei $U=80\ V$ im Anoden- und Kathodenraum} 
+\label{abb3}
+\end{figure}
+\newpage
+
+\subsection{Versuchsteil zwei}
+Im Versuchsteil zwei konnte die Wanderungsgeschwindigkeit und die Überführungszahl von Permanganationen durch die Methode der wandernden Grenzflächen ermittelt werden. 
+\begin{table}
+\centering
+\begin{tabular}{cccc}
+t [s] & I [mA] & $\Delta h_{Anode}$ [cm] & $\Delta h_{Kathode}$ [cm]\\
+\hline
+0 & 0,8756 & 0 & 0\\
+300 & 0,8924 & 0,3 & 0,4\\
+600 & 0,9268 & 0,7 & 0,8\\
+900 & 0,9679 & 1,15 & 1,15\\
+1200 & 1,0115 & 1,6 & 1,5\\
+\end{tabular}
+\caption{Messwerte bei $80\ V$}
+\label{T3}
+\end{table}
+
+\begin{figure}
+\centering
+\input{abb2.tex}
+\caption{Zeitverhalten des Stroms bei $80\ V$}
+\label{abb2}
+\end{figure}
+
+Hier wurden die Größen $\Delta h=0,005\ m$ und $\Delta A=0,005\ m^2$ geschätzt. 
+Die Wanderungsgeschwindigkeit im Kathodenraum beträgt \wanK und im Anodenraum \wanA.
+Ermittelt wurde diese über Gleichung \ref{wan}, der Fehler konnte über Gleichung \ref{dwan} ermittelt werden
+\begin{equation}
+v_{MnO_4^-}=\frac{\Delta h}{t}
+\label{wan}
+\end{equation} 
+
+\begin{equation}
+\Delta v_{MnO_4^-} = \sqrt{\left(\frac{1}{t}\cdot\Delta\Delta h\right)^2 + \left(-\frac{\Delta h}{t^2}\cdot \Delta t\right)^2}
+\label{dwan}
+\end{equation} 
+
+In den Gleichungen \ref{BSP_wan} und \ref{BSP_dwan} sind Beispielhaft diese Rechnungen für den Kathodenraum durchgeführt.
+
+
+\begin{equation}
+v_{MnO_4^-}=\frac{0,015\ m}{1200\ s} = 1,25 \cdot 10^{-5}\ \frac{m}{s}
+\label{BSP_wan}
+\end{equation} 
+
+\begin{equation}
+\Delta v_{MnO_4^-} = \sqrt{\left(\frac{1}{1200\ s}\cdot0,005\ m\right)^2 + \left(-\frac{0,015}{1200^2}\cdot 3\ s\right)^2} = 4,17 \cdot 10^{-6}\ \frac{m}{s} 
+\label{BSP_dwan}
+\end{equation} 
+
+Als Nächstes wurde die Ionenbeweglichkeit nach Gleichung \ref{ibw}, \ref{dUL} und \ref{dibw} berechnet. Beispielhaft ist das in den Gleichungen \ref{BSP_dibw} bis \ref{BSP_ibw}.
+
+\begin{equation}
+u_{MnO_4^-} = \frac{v_{MnO_4^-}\cdot l}{U}
+\label{ibw}
+\end{equation} 
+
+\begin{align}
+\Delta (ul) &= \sqrt{(l\cdot\Delta U)^2 (U\cdot\Delta l)^2} \label{dUL}\\
+\Delta u_{MnO_4^-} &= \sqrt{ \left(\frac{1}{U}\cdot\Delta (ul)\right)^2 + \left(-\frac{u_{MnO_4^-}\cdot l}{U^2}\cdot\Delta U\right)^2}\label{dibw}\\
+\end{align}
+
+
+\begin{equation}
+u_{MnO_4^-} = \frac{1,25\cdot 10^{-5}\cdot 0,442\ m\ \frac{m}{s}}{80\ V} = 6,91\cdot 10^{-8}\frac{m^2}{s\cdot V}
+\label{BSP_dibw}
+\end{equation}
+
+
+\begin{align}
+\Delta (ul) &= \sqrt{(0,442\ m\cdot 0,4\ V)^2 (80\ V\cdot0,005\ m)^2}\label{BSP_dUL}\\
+\Delta (ul) &= 0,437\ \frac{m^2}{s}\\ 
+\Delta u_{MnO_4^-} &= \sqrt{ \left(\frac{1}{80\ V}\cdot\ 0,437\ \frac{m^2}{s}\right)^2 + \left(-\frac{2,7\cdot 10^{-6}\ \frac{m}{s}\cdot 0,442\ m}{80^2\ V}\cdot\ 0,4\ V\right)^2}\\
+\Delta u_{MnO_4^-} &=0,00546\ \frac{m^2}{s\cdot V}\label{BSP_ibw}\\
+\end{align}
+
+Im Anschluss wurde die Molare Leitfähigkeit berechnet. Zusehen ist dies in den Gleichungen \ref{lam}, \ref{dlam}, \ref{BSP_lam} und \ref{BSP_dlam}.
+
+\begin{equation}
+\lambda_{MnO_4^-} = z\cdot F\cdot u_{MnO_4^-} 
+\label{lam}
+\end{equation}
+
+\begin{equation}
+\Delta\lambda_{MnO_4^-} = z\cdot F\cdot\Delta U
+\label{dlam}
+\end{equation}
+
+\begin{equation}
+1\cdot 9648,53321\ \frac{C}{mol}\cdot 6,91\cdot 10^{-8}\ \frac{m^2}{V\cdot s} = 0,666\cdot 10^{-3}\frac{S\cdot m^2}{mol}
+\label{BSP_lam}
+\end{equation}
+
+\begin{equation}
+1\cdot 9648,53321\ \frac{c}{mol}\cdot 6,91\cdot 10^{-8}\ \frac{m^2}{V\cdot s}
+\label{BSP_dlam}
+\end{equation}
+
+Danach wurde die Leitfähigkeit über die Gleichunngen \ref{k}, \ref{dk}, \ref{BSP_k} und \ref{BSP_dk} bestimmt.
+\begin{equation}
+\kappa = \frac{I\cdot l}{U\cdot A}
+\label{k}
+\end{equation}
+
+\begin{align}
+\Delta(I/U) &= \sqrt{\left(\frac{1}{U}\cdot \Delta I\right)^2 + \left(-\frac{I}{U^2}\cdot\Delta U\right)^2}\label{dIU}\\
+\Delta(l/A) &= \sqrt{\left(\frac{1}{A}\cdot \Delta l\right)^2+\left(-\frac{l}{A^2}\cdot\Delta A\right)^2}\label{dLA}\\
+\Delta\kappa &= \sqrt{\left(\frac{I}{U}\Delta (I/A)\right)^2 + \left(\frac{l}{A}\cdot\Delta (I/U)\right)^2}\label{dk}\\
+\end{align}
+
+\begin{equation}
+\kappa = \frac{0,9348\cdot 0,442\ m}{80\ V\cdot 0,000128\ m^2} = 40,35\ \frac{S}{m}
+\label{BSP_k}
+\end{equation}
+
+\begin{align}
+\Delta(I/U) &= \sqrt{\left(\frac{1}{80\ V}\cdot \Delta 0,9348\ mA\right)^2 + \left(-\frac{0,9348\ mA}{(80\ V)^2}\cdot 0,4\ V\right)^2} \label{dIU}\\
+\Delta(I/U) &= 8,940\cdot 10^{-5}\ \Omega^{-1}\\
+\Delta(l/A) &= \sqrt{\left(\frac{1}{0,000128\ m^2}\cdot \Delta 0,005\ m\right)^2+\left(-\frac{0,442}{(0,000128\ m^2)^2}\cdot 0,005\ m^2\right)^2}\ m^{-1}\label{dLA}\\
+\Delta(l/A) &= 134887,7\ m^{-1}\\
+\Delta\kappa &= \sqrt{\left(\frac{0,9348\ mA}{80\ V}\cdot 134887,7\ m^{-1}\right)^2 + \left(\frac{0,442\ m}{0,0001287\ m^2}\cdot 8,940\cdot 10^{-5}\right)^2}\label{BSP_dk}\\
+\Delta\kappa &= 1705,49\ \frac{S}{m}\\
+\end{align}
+
+\noindent Die oben errechneten Werte geben uns über die Gleichungen \ref{t}, \ref{dt}, \ref{BSP_t} und \ref{BSP_dt} die Überführungszahl ($t$).
+
+\begin{equation}
+t_{MnO_4^-} = \frac{\lambda_{MnO_4^-}\cdot c_{MnO_4^-}}{\kappa}
+\label{t}
+\end{equation}
+
+\begin{align}
+\Delta (\lambda\cdot c) &= \sqrt{ (\lambda\Delta C)^2 + (c\Delta\lambda)^2}\label{dlc}\\
+\Delta t &= \sqrt{ \left(\frac{1}{\kappa}\cdot\Delta(\lambda\cdot c)\right)^2 + \left(-\frac{\lambda\cdot c}{\kappa^2}\cdot\Delta\kappa\right)^2}\label{dt}\\
+\end{align}
+
+
+\begin{equation}
+t_{MnO_4^-} = \frac{0,666\cdot\ 10^{-3}\cdot 3\ \frac{mol}{m^3}}{40,35\ \frac{S}{m}} = 5,28\cdot 10^{-8}
+\label{BSP_t}
+\end{equation}
+
+\begin{align}
+\Delta (\lambda\cdot c) &= \sqrt{ (0,666\cdot 10^{-3}\ \frac{S\cdot m^2}{mol}\cdot 0,1\ \frac{mol}{m^3})^2 + (3\ \frac{mol}{m^3}\cdot 1597736\ \frac{S\cdot m^2}{mol})^2} \\
+\Delta (\lambda\cdot c) &= 0,00422548\ \frac{S}{m}\label{BSP_dlc}\\
+\Delta t &= \sqrt{ \left(\frac{1}{40,35\ \frac{S}{m}}\cdot 0,00421\right)^2 + \left(-\frac{0,6\cdot 10^{-3}\ \frac{S\cdot m^2}{mol}\cdot 3\ \frac{mol}{m^3}}{(40,351\ \frac{S}{m})^2}\cdot 1705,49\ \frac{S}{m}\right)^2} \label{BSP_dt}\\
+\Delta t &= 0,00223594\\
+\end{align}
+Als Nächstes wird die Driftgeschwindigkeit berechnet. 
+Die Gleichungen \ref{vp} und \ref{dvp} beschreiben den Mathematischen Zusammenhang, Während die Gleichungen \ref{BSP_vp} und \ref{BSP_dvp}, eine Beispielrechnung zeigen.
+\begin{equation}
+v_+ = \frac{I\cdot t_+}{A\cdot c\cdot F}
+\label{vp}
+\end{equation}
+
+\begin{align}
+\Delta(It_+) &= \sqrt{(I\Delta t_x)^2 + (t_+\Delta I)^2}\\
+\Delta(ACF) &= \sqrt{ (\Delta A\cdot c)^2 + (A\Delta c)^2} \cdot F\\
+\Delta v_+ &= \sqrt{\left(\frac{1}{AcF}\cdot\Delta(It_+)\right)^2 + \left(-\frac{I\cdot t_+}{(AcF)^2}\cdot\Delta(ACF)^2\right)^2}\label{dvp}\\
+\end{align}
+
+\begin{equation}
+v_x = \frac{1,0115\ mA\cdot 10^{-3}\ \frac{A}{mA}\cdot 5,28\cdot 10^{-8}}{0,000128\ m^2\cdot 3\ \frac{mol}{m^3}\cdot 9648,53321\ \frac{c}{mol}} = 1,35\cdot 10^{-8}
+\label{BSP_vp}
+\end{equation}
+
+
+\begin{align}
+\Delta(It_+) &= \sqrt{(1,0115\ mA\cdot\ 10^{-3}\ \frac{A}{mA}\cdot 0,00224)^2 + (4,954\cdot 10^{-8}\cdot 0,005\ mA\cdot 10^{-3}\frac{A}{mA})^2}\\
+\Delta(It_+) &= 0,00226\ A\\
+\Delta(ACF) &= \sqrt{ (0,005\ m^2\cdot 3\ \frac{mol}{m^3})^2 + (0,000128\ m^2\cdot 0,1\ \frac{mol}{m^3})^2} \cdot 9648,53321\ \frac{c}{mol}\\
+\Delta(ACF) &= 144,7280\ \frac{C}{mol}\\
+3,72\cdot 10^{-7} &= \left(\frac{1}{0,000128\ m^2\cdot 3\ \frac{mol}{m^3}\cdot 9648,53321\ \frac{C}{mol}}\cdot\ 0,00226\ A\right)^2\\
+58,46 &= \left(-\frac{1,0115\ mA\cdot 10^{-3}\ \frac{A}{mA}\cdot 4,954}{(0,000128\ m^2\cdot 3\ \frac{mol}{m^3}\cdot 9648,53321\ \frac{C}{mol})^2}\cdot 144,728^2\ \frac{C}{m}\right)^2 \label{BSP_dvp}\\
+\Delta v_+ &= \sqrt{ 3,72\cdot 10^{-7} + 58,46} = 0,00061\ \frac{m}{s} \label{dvp}\\
+\end{align}
+
+Die Überführungszahl im Kathodenraum beträgt \UEK und im Anodenraum \UEA .
+Die Driftgeschwindigkeit beträgt \DRiftA im Anoden Raum und \DRiftK im Kathodenraum.
+Weitere Werte können von der Tabelle \ref{T5} entnommen werden.
+
+\begin{table}
+\centering
+\begin{tabular}{lcc}
+		& Anode			& Kathode\\
+\hline
+$v$		& 0,0013		& 0,00125\\
+$l$		& 0,442 		& \\
+$u$ 		& $7,36\cdot 10^{-8}$	& $6,91\cdot 10^{-8}$	\\
+$\lambda$ 	& 0,00071 		& $0,666\cdot 10^{-3}$\\
+$A$ 		& 0,000128		&	\\
+$\kappa$	& 40,35			& 40,35\\
+$t$ 		& $5,28\cdot 10^{-8}$	& $4,95\cdot 10^{-8}$\\
+\end{tabular}
+\caption{Berechnung der Überführungszahl $t_-$ bei $U=80\ V$}
+\label{T5}
+\end{table}
+
+

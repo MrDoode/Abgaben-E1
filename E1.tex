@@ -1,0 +1,64 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage{fullpage}
+\usepackage[german]{babel}
+%\usepackage[inline]{showlabels}
+\usepackage{biblatex}
+\usepackage{gnuplot-lua-tikz}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\bibliography{E1.bib}
+
+%kaliumion
+\newcommand{\tVeinsKat}{$0,198$ }
+\newcommand{\tVeinsAn}{$0,240$}
+%hydroxyion
+\newcommand{\tVzweiKat}{$0,802$ }
+\newcommand{\tVzweiAn}{$0,760$ }
+
+\newcommand{\VHzwei}{$1015,7\pm85,1\ µl$ }
+\newcommand{\VOzwei}{$507,8\pm42,6\ µl$ }
+\newcommand{\liteins}{$0,27$ }
+\newcommand{\litzwei}{$0,73$ }
+%Wanderungsgeschwindigkeit
+\newcommand{\wanA}{$1,3\cdot 10^{-5}\ \frac{m}{s}$ }
+\newcommand{\wanK}{$1,25\cdot 10^{-5}\ \frac{m}{s}$ }
+%Überführungszahl teil 2
+\newcommand{\UEK}{$5,28\cdot 10^{-8}$ }
+\newcommand{\UEA}{$4,95\cdot 10^{-8}$ }
+%Driftgeschwindigkeit
+\newcommand{\DRiftK}{$1,35\cdot 10^{-8}\ \frac{m}{s}$ }
+\newcommand{\DRiftA}{$1,44\cdot 10^{-8}\ \frac{m}{s}$ }
+
+\title{Praktikum der Physikalischenchemie\\\large Ionenwanderung und Hittorfsche Überführungszahl}
+\author{\\Samed Hür (huer@uni-bremen.de)\\Janosch Ehlers (jaeh@uni-bremen.de)\\\small Gruppe H\\ \\ \textbf{Betreuer:} Oliver Thüringer\\(thueringer@uni-bremen.de)}
+\date{09.11.2022}
+
+\begin{document}
+\thispagestyle{empty}
+\maketitle
+\newpage
+
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+
+
+Ziel der Versuche ist die Überführungszahlen der Ionen in einem Elektrolyten zu bestimmen, mit hilfe der Hittorf-Methode und der Methode der wanderenden Grenzfläche.
+\input{Durchführung.tex}
+\newpage
+\input{Theoretischer_Hintergrund.tex}
+\newpage
+\input{Chemikalienliste.tex}
+\newpage
+\input{Auswertung.tex}
+
+\newpage
+
+\printbibliography
+
+\section{Anhang}
+
+\end{document}
